@@ -1,0 +1,15 @@
+-- schemas
+CREATE SCHEMA IF NOT EXISTS bronze;
+CREATE SCHEMA IF NOT EXISTS silver;
+CREATE SCHEMA IF NOT EXISTS gold;
+CREATE SCHEMA IF NOT EXISTS logs;
+
+-- log table
+
+CREATE TABLE IF NOT EXISTS logs.etl_log(
+	log_id SERIAL PRIMARY KEY,
+	layer VARCHAR(10),
+	table_name VARCHAR(100),
+	rows_loaded INT,
+	loaded_at TIMESTAMP DEFAULT NOW()
+);
