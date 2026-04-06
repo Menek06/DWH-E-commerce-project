@@ -1,0 +1,201 @@
+product_id,product_name,category,price,stock,weight_kg,description,created_at
+1,Samochodzik S,Toys,156.65,188,12.32,Opis produktu numer 1,2025-06-26
+2,Kamera Max,AUTOMOTIVE,144.47,269,3.23,,2026-03-05
+3,Spodnie S,clothing,467.61,361,9.17,Opis produktu numer 3,2025-07-08
+4,Filtr S,Toys,253.23,373,7.44,,2025-05-26
+5,Stół Max,SPORTS,-316.48,60,3.19,Opis produktu numer 5,2025-09-03
+6,Lalka Pro,toys,114.05,327,4.3,Opis produktu numer 6,2025-10-28
+7,Kask XL,Toys,173.31,202,9.28,,2026-01-04
+8,Dywan Mini,Toys,242.51,18,7.27,Opis produktu numer 8,2025-07-03
+9,Podręcznik 2.0,Beauty,265.33,289,4.8,Opis produktu numer 9,2025-12-18
+10,Filtr Mini,TOYS,421.96,173,9.44,Opis produktu numer 10,2025-06-15
+11,Dywanik Ultra,Home & Garden,378.25,361,10.68,Opis produktu numer 11,2026-02-18
+12,Szampon Elite,toys,115.91,154,,Opis produktu numer 12,2026-03-15
+13,Dywan Plus,Automotive,453.43,78,,Opis produktu numer 13,2025-07-09
+14,Kask Mini,Home & Garden,491.31,264,2.08,Opis produktu numer 14,2025-08-11
+15,Słownik XL,CLOTHING,346.66,304,5.07,Opis produktu numer 15,2026-02-10
+16,Balsam Max,Electronics,447.15,164,4.37,Opis produktu numer 16,2025-08-21
+17,Sukienka Max,HOME & GARDEN,479.57,286,3.18,Opis produktu numer 17,2025-10-22
+18,Hantle Basic,Books,162.58,456,6.71,,2025-08-05
+19,Słuchawki Plus,BEAUTY,97.7,305,9.48,Opis produktu numer 19,2025-08-18
+20,Lusterko Mini,books,381.62,414,14.61,Opis produktu numer 20,2025-08-08
+21,Filtr Basic,Clothing,239.46,233,9.7,Opis produktu numer 21,2025-08-06
+22,Stół Elite,Home & Garden,457.3,200,,Opis produktu numer 22,2025-10-16
+23,Powieść 2.0,AUTOMOTIVE,182.21,236,4.31,Opis produktu numer 23,2025-06-13
+24,Buty XL,clothing,62.42,284,11.91,Opis produktu numer 24,2025-09-10
+25,Opona Ultra,Sports,487.21,196,,,2025-04-13
+26,Opona Ultra,Beauty,350.13,88,1.26,Opis produktu numer 26,2025-06-14
+27,Szampon Plus,automotive,228.16,157,1.14,,2025-06-02
+28,Słownik Mini,Automotive,116.63,71,13.56,Opis produktu numer 28,2026-04-03
+29,Kurtka Basic,Automotive,293.19,100,13.17,Opis produktu numer 29,2025-04-21
+30,Kask Ultra,Toys,309.63,261,2.0,Opis produktu numer 30,2025-09-26
+31,Olej silnikowy Pro,Electronics,186.03,440,0.56,Opis produktu numer 31,2025-06-05
+32,Klocki Mini,beauty,113.5,88,2.9,Opis produktu numer 32,2025-10-01
+33,Lalka Basic,Books,75.8,36,2.25,Opis produktu numer 33,2025-05-02
+34,Puzzle Basic,CLOTHING,431.47,457,9.11,Opis produktu numer 34,2026-01-01
+35,Samochodzik XL,Beauty,184.1,95,0.21,Opis produktu numer 35,2025-12-03
+36,Perfumy Max,Beauty,26.4,19,10.6,,2025-07-31
+37,Koszula Basic,books,446.06,45,9.5,Opis produktu numer 37,2025-04-26
+38,Kamera XL,Books,272.17,5,7.74,Opis produktu numer 38,2025-10-16
+39,Lalka Mini,books,462.2,383,11.8,Opis produktu numer 39,2025-05-16
+40,Krem S,Home & Garden,152.96,377,4.37,,2025-07-19
+41,Kamera Max,BOOKS,430.35,7,9.1,Opis produktu numer 41,2026-01-16
+42,Gra planszowa Mini,home & garden,247.61,409,0.59,Opis produktu numer 42,2026-01-19
+43,Dywanik Basic,Automotive,197.75,338,9.6,,2025-10-09
+44,Słuchawki Max,CLOTHING,243.35,243,11.31,Opis produktu numer 44,2025-09-21
+45,Słownik 2.0,BOOKS,15.81,474,5.79,Opis produktu numer 45,2025-07-06
+46,Tablet Plus,Toys,459.84,439,4.13,Opis produktu numer 46,2025-11-24
+47,Opona Ultra,Automotive,369.81,301,7.85,Opis produktu numer 47,2026-01-01
+48,Powieść XL,Electronics,15.86,50,10.31,Opis produktu numer 48,2025-11-09
+49,Mata Elite,ELECTRONICS,469.87,336,3.33,Opis produktu numer 49,2026-01-31
+50,Sukienka Plus,home & garden,327.47,411,13.45,Opis produktu numer 50,2025-11-25
+51,Plecak 2.0,Clothing,145.43,218,10.05,Opis produktu numer 51,2025-11-23
+52,Sofa Plus,Books,173.0,30,12.21,,2026-02-27
+53,Szampon Elite,BEAUTY,80.5,393,9.25,,2025-08-20
+54,Mata Plus,ELECTRONICS,132.79,228,,Opis produktu numer 54,2025-05-04
+55,Laptop Pro,beauty,453.26,294,,Opis produktu numer 55,2025-07-26
+56,Krem Ultra,Beauty,394.84,276,5.83,Opis produktu numer 56,2025-07-31
+57,Sukienka S,toys,37.05,490,5.54,Opis produktu numer 57,2025-10-11
+58,Koszula 2.0,Books,29.27,196,4.55,Opis produktu numer 58,2026-02-08
+59,Album 2.0,Clothing,102.84,18,,Opis produktu numer 59,2025-06-04
+60,Rower 2.0,BEAUTY,160.79,273,12.2,Opis produktu numer 60,2026-03-26
+61,Tablet Mini,electronics,208.7,108,10.04,Opis produktu numer 61,2025-04-21
+62,Serum Basic,Sports,79.38,334,,Opis produktu numer 62,2025-05-22
+63,Tablet Elite,HOME & GARDEN,453.28,420,6.9,,2025-06-05
+64,Kamera Plus,clothing,118.08,411,5.13,Opis produktu numer 64,2025-04-21
+65,Klocki Mini,Clothing,77.29,428,3.28,,2026-01-05
+66,Podręcznik Plus,clothing,92.34,189,6.64,Opis produktu numer 66,2026-03-14
+67,Buty Plus,Beauty,-248.61,3,,Opis produktu numer 67,2025-04-07
+68,Opona Max,Beauty,243.25,64,9.63,Opis produktu numer 68,2025-09-05
+69,Rower Basic,Electronics,309.9,45,11.76,Opis produktu numer 69,2026-04-01
+70,Olej silnikowy Elite,SPORTS,56.89,185,14.8,Opis produktu numer 70,2025-08-09
+71,Krzesło Max,ELECTRONICS,345.77,495,7.51,,2026-03-12
+72,Słuchawki Mini,BOOKS,312.24,455,0.75,Opis produktu numer 72,2025-07-02
+73,Lampa Basic,electronics,448.59,369,8.74,Opis produktu numer 73,2025-04-22
+74,Powieść Elite,clothing,371.5,445,,Opis produktu numer 74,2026-02-25
+75,Krem S,AUTOMOTIVE,115.92,312,5.87,,2025-12-25
+76,Album Max,sports,288.65,143,,Opis produktu numer 76,2025-08-12
+77,Lalka Basic,TOYS,86.83,406,9.21,,2025-06-24
+78,Stół Plus,Beauty,497.88,302,7.0,,2025-08-27
+79,Rower Elite,toys,464.47,484,,Opis produktu numer 79,2026-04-01
+80,Lalka Pro,Electronics,257.07,217,7.24,Opis produktu numer 80,2026-02-12
+81,Gra planszowa 2.0,SPORTS,349.65,208,2.08,Opis produktu numer 81,2025-05-07
+82,Koszula Pro,Automotive,235.05,292,0.46,Opis produktu numer 82,2026-01-23
+83,Klocki Basic,Toys,10.67,321,,Opis produktu numer 83,2025-10-15
+84,Balsam Pro,books,473.59,277,3.19,Opis produktu numer 84,2025-05-21
+85,Podręcznik Pro,Toys,189.14,316,,Opis produktu numer 85,2025-05-07
+86,Olej silnikowy Plus,SPORTS,274.42,332,14.09,Opis produktu numer 86,2025-04-09
+87,Krzesło Elite,toys,343.31,141,,Opis produktu numer 87,2025-08-15
+88,Szampon XL,clothing,414.44,460,9.35,Opis produktu numer 88,2025-04-14
+89,Kamera Elite,AUTOMOTIVE,97.62,490,1.73,Opis produktu numer 89,2025-04-12
+90,Kurtka 2.0,Home & Garden,317.37,150,10.27,Opis produktu numer 90,2025-08-04
+91,Album Ultra,Automotive,-102.64,11,3.56,Opis produktu numer 91,2025-05-08
+92,Podręcznik Ultra,Toys,248.21,340,12.64,Opis produktu numer 92,2025-10-30
+93,Filtr Basic,BOOKS,247.28,497,12.7,,2025-11-09
+94,Samochodzik Basic,Home & Garden,486.87,429,13.58,Opis produktu numer 94,2026-01-11
+95,Rower Plus,Electronics,226.04,189,,Opis produktu numer 95,2026-03-17
+96,Powieść Mini,home & garden,89.67,154,,,2025-07-22
+97,Kurtka 2.0,TOYS,277.61,259,10.61,Opis produktu numer 97,2025-11-06
+98,Filtr Basic,automotive,244.7,20,,Opis produktu numer 98,2025-10-28
+99,Smartfon Ultra,sports,36.97,328,,Opis produktu numer 99,2025-11-12
+100,Dywan Pro,Clothing,339.06,44,5.98,Opis produktu numer 100,2025-05-30
+101,Dywanik XL,Electronics,82.49,437,5.85,,2025-10-09
+102,Album Max,Automotive,366.65,227,6.29,Opis produktu numer 102,2026-01-10
+103,Puzzle Ultra,Home & Garden,80.38,155,13.03,Opis produktu numer 103,2026-03-01
+104,Opona Ultra,CLOTHING,143.93,89,10.68,Opis produktu numer 104,2026-01-23
+105,Dywan Basic,beauty,413.17,154,4.63,Opis produktu numer 105,2025-08-09
+106,Stół Pro,ELECTRONICS,323.87,325,9.84,Opis produktu numer 106,2025-09-02
+107,Lampa 2.0,SPORTS,251.59,496,,Opis produktu numer 107,2025-06-10
+108,Krem S,Beauty,243.26,355,5.66,Opis produktu numer 108,2026-03-26
+109,Mata Basic,ELECTRONICS,349.71,182,,Opis produktu numer 109,2025-09-01
+110,Album Pro,books,47.65,99,2.83,,2026-01-08
+111,Serum Mini,Toys,157.53,350,5.5,Opis produktu numer 111,2025-10-05
+112,Kurtka Pro,Home & Garden,247.6,174,2.53,,2025-07-20
+113,Stół Elite,clothing,67.12,67,7.24,Opis produktu numer 113,2025-09-30
+114,Buty 2.0,TOYS,374.79,60,12.87,,2025-12-08
+115,Kask Basic,SPORTS,348.5,401,,,2025-07-30
+116,Puzzle Pro,SPORTS,261.6,30,13.64,,2025-10-31
+117,Laptop Plus,Clothing,451.58,94,0.54,,2025-11-12
+118,Opona Mini,TOYS,366.99,123,1.12,Opis produktu numer 118,2026-03-27
+119,Balsam Elite,Sports,379.47,2,1.57,,2025-07-19
+120,Krem Mini,home & garden,98.62,181,6.42,Opis produktu numer 120,2025-09-07
+121,Sukienka Mini,clothing,252.95,184,8.4,,2025-10-18
+122,Szampon Plus,beauty,162.88,499,3.47,Opis produktu numer 122,2025-08-27
+123,Dywan Plus,Automotive,16.27,345,1.67,Opis produktu numer 123,2025-05-01
+124,Koszula Plus,home & garden,489.01,379,14.67,,2025-12-23
+125,Podręcznik Elite,BEAUTY,365.35,142,11.51,Opis produktu numer 125,2025-05-09
+126,Klocki Mini,Automotive,493.89,261,11.54,,2025-11-26
+127,Szampon 2.0,Sports,58.81,27,7.52,,2026-01-02
+128,Słownik S,TOYS,57.2,39,7.85,Opis produktu numer 128,2025-08-08
+129,Dywan Max,automotive,178.37,440,0.36,Opis produktu numer 129,2025-08-26
+130,Sukienka Ultra,automotive,235.23,16,,Opis produktu numer 130,2025-10-30
+131,Sofa 2.0,BEAUTY,248.85,56,7.41,Opis produktu numer 131,2025-07-01
+132,Filtr 2.0,Automotive,37.31,134,14.57,Opis produktu numer 132,2025-10-05
+133,Plecak Mini,ELECTRONICS,420.1,178,8.8,Opis produktu numer 133,2025-05-18
+134,Podręcznik Ultra,clothing,211.85,28,3.79,Opis produktu numer 134,2025-06-04
+135,Koszula Plus,BOOKS,273.82,19,12.96,Opis produktu numer 135,2025-08-31
+136,Hantle Pro,Automotive,195.09,199,1.56,Opis produktu numer 136,2025-04-15
+137,Krzesło Mini,Automotive,176.37,314,14.54,,2025-05-13
+138,Kamera XL,sports,498.15,205,9.41,Opis produktu numer 138,2025-06-11
+139,Spodnie S,toys,270.22,218,11.96,Opis produktu numer 139,2025-10-31
+140,Perfumy Max,Beauty,213.01,128,6.85,Opis produktu numer 140,2026-01-01
+141,Smartfon XL,Home & Garden,481.44,380,4.09,Opis produktu numer 141,2025-05-24
+142,Puzzle S,Electronics,82.39,77,11.51,Opis produktu numer 142,2025-09-05
+143,Powieść Plus,Sports,150.65,82,9.06,Opis produktu numer 143,2026-02-04
+144,Kurtka Elite,ELECTRONICS,237.44,286,6.39,Opis produktu numer 144,2025-12-21
+145,Sofa Max,HOME & GARDEN,146.11,281,,Opis produktu numer 145,2025-07-29
+146,Smartfon Pro,clothing,41.16,489,5.52,Opis produktu numer 146,2026-02-16
+147,Klocki Basic,SPORTS,467.14,267,8.75,Opis produktu numer 147,2025-07-09
+148,Mata 2.0,CLOTHING,405.28,168,11.08,Opis produktu numer 148,2025-12-04
+149,Puzzle Elite,HOME & GARDEN,144.53,209,8.88,Opis produktu numer 149,2025-09-24
+150,Sukienka Mini,beauty,146.09,401,5.51,Opis produktu numer 150,2025-10-28
+151,Smartfon S,Electronics,471.02,353,10.11,Opis produktu numer 151,2025-09-19
+152,Kask Mini,Clothing,226.78,4,5.96,Opis produktu numer 152,2025-11-24
+153,Kask Plus,sports,88.51,224,13.2,Opis produktu numer 153,2025-09-07
+154,Tablet Max,Clothing,240.83,211,5.06,Opis produktu numer 154,2026-02-11
+155,Sofa Max,clothing,408.58,377,10.46,Opis produktu numer 155,2025-05-10
+156,Lampa 2.0,HOME & GARDEN,159.72,294,,,2025-07-13
+157,Buty S,Beauty,244.4,376,,,2025-06-04
+158,Powieść Max,SPORTS,202.81,193,13.28,,2026-03-23
+159,Olej silnikowy S,Sports,107.15,359,0.84,Opis produktu numer 159,2025-05-31
+160,Mata Basic,Clothing,287.95,7,6.58,Opis produktu numer 160,2025-08-14
+161,Szampon Plus,Sports,432.35,400,11.22,Opis produktu numer 161,2025-08-26
+162,Krzesło S,Sports,341.82,214,,Opis produktu numer 162,2026-03-20
+163,Plecak Max,Sports,191.12,350,1.38,Opis produktu numer 163,2025-10-20
+164,Klocki Elite,Beauty,135.55,48,0.88,Opis produktu numer 164,2025-08-05
+165,Album S,ELECTRONICS,196.66,500,5.63,Opis produktu numer 165,2025-06-21
+166,Tablet S,home & garden,465.86,449,1.44,Opis produktu numer 166,2025-08-25
+167,Kurtka Max,clothing,254.61,498,11.24,Opis produktu numer 167,2025-11-10
+168,Mata S,Books,90.84,377,11.48,,2025-05-02
+169,Gra planszowa Pro,SPORTS,27.57,133,,Opis produktu numer 169,2026-02-03
+170,Szampon Pro,automotive,247.75,252,,Opis produktu numer 170,2026-01-18
+171,Sukienka Mini,CLOTHING,419.13,383,4.16,Opis produktu numer 171,2025-06-08
+172,Krzesło S,Electronics,214.05,39,7.52,,2025-10-17
+173,Smartfon Max,clothing,476.1,428,0.53,Opis produktu numer 173,2025-04-06
+174,Krem 2.0,Books,-485.19,335,6.85,Opis produktu numer 174,2025-06-16
+175,Buty Elite,Electronics,401.09,380,,Opis produktu numer 175,2025-09-20
+176,Koszula Ultra,BOOKS,434.1,45,,,2025-09-17
+177,Klocki Max,HOME & GARDEN,221.86,412,13.57,Opis produktu numer 177,2025-10-02
+178,Spodnie Mini,sports,243.46,288,1.44,Opis produktu numer 178,2025-09-27
+179,Lusterko Basic,Beauty,261.54,498,3.44,Opis produktu numer 179,2026-01-14
+180,Szampon XL,clothing,454.53,244,14.76,Opis produktu numer 180,2025-11-01
+181,Rower XL,beauty,47.5,23,7.71,Opis produktu numer 181,2025-08-09
+182,Filtr Max,toys,256.69,58,7.0,Opis produktu numer 182,2025-09-14
+183,Tablet Plus,Beauty,297.73,232,6.8,Opis produktu numer 183,2025-10-11
+184,Lampa Elite,HOME & GARDEN,137.07,344,,Opis produktu numer 184,2026-04-01
+185,Klocki Plus,ELECTRONICS,348.99,444,11.19,Opis produktu numer 185,2025-10-30
+186,Lusterko S,Toys,340.8,411,1.96,,2026-02-05
+187,Smartfon Elite,ELECTRONICS,328.37,223,12.89,Opis produktu numer 187,2026-02-18
+188,Kask 2.0,home & garden,-91.39,78,6.73,Opis produktu numer 188,2026-03-24
+189,Gra planszowa S,SPORTS,418.58,26,1.63,Opis produktu numer 189,2025-08-25
+190,Lalka 2.0,BOOKS,261.54,371,10.21,Opis produktu numer 190,2025-07-28
+191,Stół Pro,electronics,41.12,457,13.35,,2025-05-20
+192,Album 2.0,BEAUTY,104.18,176,7.66,Opis produktu numer 192,2025-04-18
+193,Podręcznik S,AUTOMOTIVE,358.58,491,14.12,Opis produktu numer 193,2025-10-01
+194,Krem Basic,sports,336.86,66,,,2025-07-26
+195,Spodnie Ultra,automotive,33.05,9,3.99,Opis produktu numer 195,2026-01-04
+196,Perfumy Pro,clothing,121.08,287,3.94,Opis produktu numer 196,2025-10-04
+197,Tablet XL,Books,438.11,309,10.63,Opis produktu numer 197,2025-08-22
+198,Samochodzik Plus,Clothing,430.61,52,0.73,,2025-05-16
+199,Sukienka Elite,TOYS,226.34,259,13.07,,2025-09-29
+200,Podręcznik Basic,Clothing,213.72,393,,Opis produktu numer 200,2025-08-04
