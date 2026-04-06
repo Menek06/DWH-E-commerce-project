@@ -21,4 +21,24 @@ FROM '/DWH_PROJECT/source/customers.csv'
 DELIMITER ','
 CSV HEADER;
 
-SELECT COUNT(*) AS number_of_rows FROM bronze.customers;
+
+------------------------------------------------------
+-- Creating and ingesting data to order items table --
+------------------------------------------------------
+
+DROP TABLE IF EXISTS bronze.order_items;
+CREATE TABLE IF NOT EXISTS bronze.order_items(
+	item_id varchar,
+	order_id VARCHAR,
+	product_id VARCHAR,
+	quantity VARCHAR,
+	unit_price VARCHAR,
+	discount VARCHAR
+)
+
+COPY bronze.order_items
+FROM '/DWH_PROJECT/source/order_items.csv'
+DELIMITER ','
+CSV HEADER;
+
+
