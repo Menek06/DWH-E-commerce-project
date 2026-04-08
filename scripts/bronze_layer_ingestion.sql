@@ -1,13 +1,13 @@
+BEGIN;
 ----------------------------------------------------
 -- Creating and ingesting data to customers table --
 ----------------------------------------------------
-
 DROP TABLE IF EXISTS bronze.customers;
 CREATE TABLE IF NOT EXISTS bronze.customers(
 	customer_id VARCHAR,
 	first_name VARCHAR,
 	last_name VARCHAR,
-	cust_email VARCHAR,
+	email VARCHAR,
 	phone VARCHAR,
 	city VARCHAR,
 	country VARCHAR,
@@ -15,10 +15,13 @@ CREATE TABLE IF NOT EXISTS bronze.customers(
 	_loaded_at TIMESTAMP DEFAULT NOW()
 );
 
-COPY bronze.customers
+COPY bronze.customers(customer_id, first_name, last_name, email, phone, city, country, registration_date)
 FROM '/DWH_PROJECT/source/customers.csv'
 DELIMITER ','
 CSV HEADER;
+
+INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
+SELECT 'bronze', 'customers', COUNT(*) FROM bronze.customers;
 
 ------------------------------------------------------
 -- Creating and ingesting data to order items table --
@@ -35,10 +38,13 @@ CREATE TABLE IF NOT EXISTS bronze.order_items(
 	_loaded_at TIMESTAMP DEFAULT NOW()
 );
 
-COPY bronze.order_items
+COPY bronze.order_items(item_id, order_id, product_id, quantity, unit_price, discount)
 FROM '/DWH_PROJECT/source/order_items.csv'
 DELIMITER ','
 CSV HEADER;
+
+INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
+SELECT 'bronze', 'order_items', COUNT(*) FROM bronze.order_items;
 
 --------------------------------------------------
 -- Creating and ingesting data to orders table --
@@ -57,10 +63,13 @@ CREATE TABLE IF NOT EXISTS bronze.orders(
 	_loaded_at TIMESTAMP DEFAULT NOW()
 );
 
-COPY bronze.orders
+COPY bronze.orders(order_id, customer_id, order_date, status, shipping_address, shipping_city, shipping_country, total_amount)
 FROM '/DWH_PROJECT/source/orders.csv'
 DELIMITER ','
 CSV HEADER;
+
+INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
+SELECT 'bronze', 'orders', COUNT(*) FROM bronze.orders;
 
 ----------------------------------------------------
 -- Creating and ingesting data to payments table --
@@ -78,10 +87,13 @@ CREATE TABLE IF NOT EXISTS bronze.payments(
 	_loaded_at TIMESTAMP DEFAULT NOW()
 );
 
-COPY bronze.payments
+COPY bronze.payments(payment_id, order_id, payment_date, payment_method, amount, transaction_id, status)
 FROM '/DWH_PROJECT/source/payments.csv'
 DELIMITER ','
 CSV HEADER;
+
+INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
+SELECT 'bronze', 'payments', COUNT(*) FROM bronze.payments;
 
 ----------------------------------------------------
 -- Creating and ingesting data to products table --
@@ -100,9 +112,12 @@ CREATE TABLE IF NOT EXISTS bronze.products(
 	_loaded_at TIMESTAMP DEFAULT NOW()
 );
 
-COPY bronze.products
+COPY bronze.products(product_id, product_name, category, price, stock, weight_kg, description, created_at)
 FROM '/DWH_PROJECT/source/products.csv'
 DELIMITER ','
 CSV HEADER;
 
+INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
+SELECT 'bronze', 'products', COUNT(*) FROM bronze.products;
 
+COMMIT;
