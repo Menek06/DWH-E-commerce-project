@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS bronze.customers(
 	city VARCHAR,
 	country VARCHAR,
 	registration_date VARCHAR,
-	_loaded_at TIMESTAMP DEFAULT NOW()
+	_loaded_at TIMESTAMP DEFAULT NOW(),
+	_source_file VARCHAR DEFAULT 'customers.csv'
 );
 
 COPY bronze.customers(customer_id, first_name, last_name, email, phone, city, country, registration_date)
@@ -35,7 +36,8 @@ CREATE TABLE IF NOT EXISTS bronze.order_items(
 	quantity VARCHAR,
 	unit_price VARCHAR,
 	discount VARCHAR,
-	_loaded_at TIMESTAMP DEFAULT NOW()
+	_loaded_at TIMESTAMP DEFAULT NOW(),
+	_source_file VARCHAR DEFAULT 'order_items.csv'
 );
 
 COPY bronze.order_items(item_id, order_id, product_id, quantity, unit_price, discount)
@@ -60,7 +62,8 @@ CREATE TABLE IF NOT EXISTS bronze.orders(
 	shipping_city VARCHAR,
 	shipping_country VARCHAR,
 	total_amount VARCHAR,
-	_loaded_at TIMESTAMP DEFAULT NOW()
+	_loaded_at TIMESTAMP DEFAULT NOW(),
+	_source_file VARCHAR DEFAULT 'orders.csv'
 );
 
 COPY bronze.orders(order_id, customer_id, order_date, status, shipping_address, shipping_city, shipping_country, total_amount)
@@ -84,7 +87,8 @@ CREATE TABLE IF NOT EXISTS bronze.payments(
 	amount VARCHAR,
 	transaction_id VARCHAR,
 	status VARCHAR,
-	_loaded_at TIMESTAMP DEFAULT NOW()
+	_loaded_at TIMESTAMP DEFAULT NOW(),
+	_source_file VARCHAR DEFAULT 'payments.csv'
 );
 
 COPY bronze.payments(payment_id, order_id, payment_date, payment_method, amount, transaction_id, status)
@@ -109,7 +113,8 @@ CREATE TABLE IF NOT EXISTS bronze.products(
 	weight_kg VARCHAR,
 	description VARCHAR,
 	created_at VARCHAR,
-	_loaded_at TIMESTAMP DEFAULT NOW()
+	_loaded_at TIMESTAMP DEFAULT NOW(),
+	_source_file VARCHAR DEFAULT 'products.csv'
 );
 
 COPY bronze.products(product_id, product_name, category, price, stock, weight_kg, description, created_at)
