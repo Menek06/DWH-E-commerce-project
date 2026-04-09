@@ -1,5 +1,9 @@
 -- Active: 1775758877245@@127.0.0.1@5432@DWH_E-commarce
 -- Transforming customer table, validating data types, cleaning white spaces, replaceing missing data 
+
+-----------------------------------------------
+-- customers table cleaning and transforming --
+-----------------------------------------------
 DROP TABLE IF EXISTS silver.customers;
 CREATE TABLE IF NOT EXISTS silver.customers (
     customer_id       INT,
@@ -48,5 +52,51 @@ WHERE rn = 1;
 INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
 SELECT 'silver', 'customers', COUNT(*) FROM silver.customers;
 
-SELECT * FROM logs.etl_log
 
+--------------------
+-- order_items 
+--------------------
+-- deduplicate by item_id
+-- null in discount changed to 0.00
+
+DROP TABLE IF EXISTS silver.order_items;
+CREATE TABLE IF NOT EXISTS silver.order_items (
+    item_id INT,
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    unit_price DECIMAL(10,2),
+    discount DECIMAL(3,2),
+    _transformed_at TIMESTAMP DEFAULT NOW()
+);
+INSERT INTO silver.order_items 
+SELECT
+	item_id,
+	order_id,
+	product_id,
+	quantity,
+	unit_price,
+	discount
+FROM (
+	SELECT 
+		item_id::INT,
+		oi.order_id::INT,
+		oi.product_id::INT,
+		oi.quantity::INT,
+		unit_price::DECIMAL(10,2),
+		CASE 
+			WHEN discount IS NULL THEN 0.00
+			ElSE discount::DECIMAL(3,2)
+		END AS discount,
+		ROW_NUMBER() OVER(PARTITION BY item_id ORDER BY unit_price DESC) AS rn
+	FROM bronze.order_items oi
+	JOIN bronze.products p
+	  ON oi.product_id = p.product_id
+	JOIN bronze.orders o
+	  ON o.order_id = oi.order_id
+	WHERE quantity::INT > 0
+	  AND item_id IS NOT NULL
+)t
+WHERE rn = 1;
+INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
+SELECT 'silver', 'order_items', COUNT(*) FROM silver.order_items;
