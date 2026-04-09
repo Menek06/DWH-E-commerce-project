@@ -1,9 +1,14 @@
+-- Active: 1775758877245@@127.0.0.1@5432@DWH_E-commarce
 -- Transforming customer table, validating data types, cleaning white spaces, replaceing missing data 
 SELECT 
 	customer_id::int,
 	TRIM(INITCAP(first_name)) AS first_name,
 	TRIM(INITCAP(last_name)) AS last_name,
-	COALESCE(email, 'N/A') AS email,
+	CASE 
+		WHEN email IS NULL THEN 'N/A'
+		WHEN POSITION('@' in email) = 0 THEN 'N/A'
+		ELSE email
+	END AS email,
 	COALESCE(phone, 'N/A') as phone,
 	TRIM(INITCAP(city)) AS city,
 	INITCAP(LOWER(TRIM(country))) AS country,
