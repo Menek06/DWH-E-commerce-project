@@ -125,4 +125,17 @@ CSV HEADER;
 INSERT INTO logs.etl_log (layer, table_name, rows_loaded)
 SELECT 'bronze', 'products', COUNT(*) FROM bronze.products;
 
+
+
+SELECT 'bronze.customers'   AS tabela, COUNT(*) AS rekordy FROM bronze.customers
+UNION ALL
+SELECT 'bronze.products'    AS tabela, COUNT(*) AS rekordy FROM bronze.products
+UNION ALL
+SELECT 'bronze.orders'      AS tabela, COUNT(*) AS rekordy FROM bronze.orders
+UNION ALL
+SELECT 'bronze.order_items' AS tabela, COUNT(*) AS rekordy FROM bronze.order_items
+UNION ALL
+SELECT 'bronze.payments'    AS tabela, COUNT(*) AS rekordy FROM bronze.payments
+ORDER BY tabela;
+
 COMMIT;
