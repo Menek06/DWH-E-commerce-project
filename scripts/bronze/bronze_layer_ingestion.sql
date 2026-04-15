@@ -13,9 +13,6 @@ BEGIN
     RAISE NOTICE 'Loading Bronze Layer';
     RAISE NOTICE '================================================';
 
-    ---------------------------------------------------------------------------
-    -- 1. CUSTOMERS
-    ---------------------------------------------------------------------------
     v_start_time := clock_timestamp();
     RAISE NOTICE '>> Truncating Table: bronze.customers';
     TRUNCATE TABLE bronze.customers;
@@ -32,9 +29,6 @@ BEGIN
     RAISE NOTICE '>> Load Duration: % seconds', EXTRACT(EPOCH FROM (v_end_time - v_start_time));
     RAISE NOTICE '>> -------------';
 
-    ---------------------------------------------------------------------------
-    -- 2. ORDER ITEMS
-    ---------------------------------------------------------------------------
     v_start_time := clock_timestamp();
     RAISE NOTICE '>> Truncating Table: bronze.order_items';
     TRUNCATE TABLE bronze.order_items;
@@ -51,9 +45,6 @@ BEGIN
     RAISE NOTICE '>> Load Duration: % seconds', EXTRACT(EPOCH FROM (v_end_time - v_start_time));
     RAISE NOTICE '>> -------------';
 
-    ---------------------------------------------------------------------------
-    -- 3. ORDERS
-    ---------------------------------------------------------------------------
     v_start_time := clock_timestamp();
     RAISE NOTICE '>> Truncating Table: bronze.orders';
     TRUNCATE TABLE bronze.orders;
@@ -70,9 +61,6 @@ BEGIN
     RAISE NOTICE '>> Load Duration: % seconds', EXTRACT(EPOCH FROM (v_end_time - v_start_time));
     RAISE NOTICE '>> -------------';
 
-    ---------------------------------------------------------------------------
-    -- 4. PAYMENTS
-    ---------------------------------------------------------------------------
     v_start_time := clock_timestamp();
     RAISE NOTICE '>> Truncating Table: bronze.payments';
     TRUNCATE TABLE bronze.payments;
@@ -89,9 +77,6 @@ BEGIN
     RAISE NOTICE '>> Load Duration: % seconds', EXTRACT(EPOCH FROM (v_end_time - v_start_time));
     RAISE NOTICE '>> -------------';
 
-    ---------------------------------------------------------------------------
-    -- 5. PRODUCTS
-    ---------------------------------------------------------------------------
     v_start_time := clock_timestamp();
     RAISE NOTICE '>> Truncating Table: bronze.products';
     TRUNCATE TABLE bronze.products;
@@ -108,9 +93,6 @@ BEGIN
     RAISE NOTICE '>> Load Duration: % seconds', EXTRACT(EPOCH FROM (v_end_time - v_start_time));
     RAISE NOTICE '>> -------------';
 
-    ---------------------------------------------------------------------------
-    -- PODSUMOWANIE KOŃCOWE
-    ---------------------------------------------------------------------------
     v_batch_end_time := clock_timestamp();
     RAISE NOTICE '==========================================';
     RAISE NOTICE 'Loading Bronze Layer is Completed';
@@ -123,7 +105,6 @@ EXCEPTION WHEN OTHERS THEN
     RAISE NOTICE 'Error Message: %', SQLERRM;
     RAISE NOTICE 'Error State: %', SQLSTATE;
     RAISE NOTICE '==========================================';
-    -- W procedurach PG błąd automatycznie wycofuje transakcję (rollback)
 END;
 $$;
 
